@@ -4,7 +4,7 @@ This documentation provides instructions on how to run the Express server, Vite 
 
 ## Clone the Repository
 
-Clone this chat app repository from the version control system (e.g., GitHub) to your local machine.
+Clone this chat app repository from the version control system to your local machine.
 
 ## Install dependencies:
 

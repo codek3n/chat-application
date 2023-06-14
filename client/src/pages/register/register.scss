@@ -1,0 +1,91 @@
+@import '../../sass/index.scss';
+
+.register {
+  width: 85.25rem;
+  height: 53.188rem;
+  margin: 2rem;
+
+  header {
+    margin-bottom: 2.5rem;
+
+    .logo {
+      font-size: 2.5rem;
+      margin-left: 6rem;
+      padding-top: 3.406rem;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.75rem
+  }
+
+  &__container {
+    @include container
+  }
+
+  .form__container {
+    @include form--container;
+  }
+
+  .form {
+    margin-bottom: 1.75rem;
+
+    input {
+      @include from--input;
+    }
+
+    input::placeholder {
+      color: $color_secondary;
+      opacity: 0.25;
+    }
+
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.688rem;
+  }
+
+  span {
+    color: $color_accent-2;
+  }
+
+  .form__button {
+    @include form__button;
+  }
+
+  p {
+    span {
+      color: $color_accent-1;
+      font-weight: 500;
+    }
+  }
+
+  .form__error {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    gap: 0.5rem;
+    color: $color_accent-2;
+    padding-inline: 2rem;
+    padding-block: 0.5rem;
+
+    border-radius: 20rem;
+
+    // font-size: 0.8rem;
+    // max-width: 40rem;
+    text-align: start;
+    margin-inline: 20%;
+
+    .icon {
+      margin-top: 0.2rem;
+      color: $color_accent-2;
+      font-size: 1rem;
+    }
+  }
+}

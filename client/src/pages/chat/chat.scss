@@ -1,0 +1,128 @@
+@import '../../sass/index.scss';
+
+.chat {
+  width: 85.25rem;
+  height: 53.188rem;
+  margin: 2rem;
+
+
+  &__container {
+    @include container;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  nav {
+    width: 5.125rem;
+    border-radius: 1.25rem 0 0 1.25rem;
+    background-color: $color_secondary;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
+
+  .icon {
+    color: $color_primary;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+
+    // border: 1px solid red;
+  }
+
+  .icon:active {
+    scale: .9;
+    transition: ease-in-out 0.1s;
+    opacity: .6;
+  }
+
+  aside {
+    background-color: $color_chat-background;
+    min-width: 17.625rem;
+    // min-width: 2rem;
+
+    .aside__container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .chat__aside--header {
+      font-size: 1.125rem;
+      font-weight: 400;
+      margin-left: 1.375rem;
+      margin-top: 2rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .logo {
+      margin-left: 1.375rem;
+      margin-top: 2rem;
+      font-size: 1.875rem;
+    }
+  }
+
+  .line-divider {
+    position: absolute;
+    top: 6rem;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: $color_border-2;
+  }
+
+  .chat__conversation {
+    flex: 1;
+  }
+
+  .profile-avatar {
+    color: $color_accent-1;
+    font-size: 3rem;
+    margin-top: 1.875rem;
+    margin-bottom: 5.125rem;
+    cursor: pointer;
+
+    border: 2px solid $color_primary;
+    border-radius: 100px;
+  }
+
+  .profile-avatar:active {
+    scale: .9;
+    transition: ease-in-out 0.1s;
+    opacity: .6;
+  }
+
+  .active {
+    color: $color_accent-1;
+  }
+
+  .chat-notification {
+    position: absolute;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: $color_primary;
+    background-color: $color_accent-2;
+    border-radius: 100px;
+    width: 1.3rem;
+    height: 1.3rem;
+    text-align: center;
+
+    margin-left: 0.8rem;
+    margin-top: -3.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+}

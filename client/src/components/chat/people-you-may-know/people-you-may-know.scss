@@ -1,0 +1,42 @@
+@import '../../../sass/index.scss';
+
+.people-you-may-know {
+  // border: 1px solid red;
+  margin-bottom: 0.75rem;
+
+  .chat__aside--header {
+    margin-inline: 2rem;
+  }
+
+  .contact-card__container {
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+  }
+
+
+  .online--indicator {
+    background-color: $color_accent-1;
+    border-radius: 10px;
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    margin-left: 2.1rem;
+    margin-top: 0.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .contact-card__profile-pic {
+    display: flex;
+    align-items: start;
+    position: relative;
+  }
+
+  .contact-card__profile-avatar {
+    color: $color_border;
+    font-size: 3rem;
+  }
+}

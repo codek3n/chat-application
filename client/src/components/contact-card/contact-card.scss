@@ -1,0 +1,85 @@
+@import '../../sass/index.scss';
+
+.contact-card {
+  margin-bottom: 0.75rem;
+
+  &__container {
+    min-height: 3.5rem;
+
+    display: flex;
+    align-items: center;
+    border: 1px solid $color_border-2;
+    border-radius: 0.625rem;
+    margin-inline: 0.563rem;
+    margin-bottom: 0.75rem;
+
+    cursor: pointer;
+
+    // border: 1px solid red;
+  }
+
+  .contact-card__profile-pic {
+    display: flex;
+    align-items: start;
+    position: relative;
+  }
+
+  .online--indicator {
+    background-color: $color_accent-1;
+    border-radius: 10px;
+    width: .6rem;
+    height: .6rem;
+    position: absolute;
+    margin-left: 2.1rem;
+    margin-top: 0.2rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+  }
+
+  &__notif {
+    font-size: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1.2rem;
+    width: 1.2rem;
+
+    color: $color_primary;
+    background-color: $color_accent-2;
+
+    border-radius: 100px;
+  }
+
+  .card--time-notif {
+    // flex: 1;
+    margin-inline: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    // border: 1px solid red;
+
+    p {
+      font-size: 0.7rem;
+      text-align: end;
+    }
+  }
+
+  .card--name-preview {
+    flex: 1;
+    margin-left: 0.5rem;
+  }
+
+  .contact-card__profile-avatar {
+    color: $color_border;
+    font-size: 3rem;
+  }
+
+}

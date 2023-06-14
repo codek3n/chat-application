@@ -1,0 +1,91 @@
+@import '../../sass/index.scss';
+
+.user-details {
+  position: absolute;
+  z-index: 1;
+  min-width: 19.25rem;
+  min-height: 9.313rem;
+  border-radius: 0.625rem;
+  // background-color: #000;
+  background-color: #212020;
+
+  top: 2rem;
+  left: 4.2rem;
+
+  .user-details__container {
+    margin-inline: 1rem;
+  }
+
+  .user-details__login-as {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-details--profile-pic {
+    margin-top: 0.5rem;
+
+    .user-details__contact-info__profile-avatar {
+      font-size: 5rem;
+      color: $color_accent-1;
+    }
+
+  }
+
+  .user-details--name-status {
+    h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: $color_primary;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .online--indicator {
+    background-color: $color_accent-1;
+    border-radius: 10px;
+    width: .6rem;
+    height: .6rem;
+    // position: absolute;
+    // margin-left: 2.2rem;
+    // margin-top: 0.2rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $color_primary;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .user-details--line-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #70707036;
+    margin-inline: auto;
+  }
+
+  .logout {
+    display: flex;
+    align-items: center;
+    color: $color_primary;
+    opacity: 0.5;
+    gap: 0.5rem;
+    padding-block: 1rem;
+    padding-left: 1rem;
+  }
+
+  .sign-out--icon {
+    font-size: 2rem;
+  }
+
+
+  .sign-out--icon:active {
+    scale: .9;
+    transition: ease-in-out 0.1s;
+    opacity: .6;
+  }
+
+}
